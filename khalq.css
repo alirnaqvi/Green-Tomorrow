@@ -29,6 +29,7 @@ body {
     left: 20px; /* Change this to 'right: 20px;' if you want it on the right */
     max-width: 100px;
     height: auto;
+    z-index: 10; /* Ensure logo stays above other elements */
 }
 
 /* Header Styles */
@@ -42,6 +43,7 @@ header h1 {
     color: #106861;
     font-size: 2.5em;
     font-weight: 600;
+    margin-top: 60px; /* Add margin-top to prevent overlap with the logo */
 }
 
 header p {
@@ -103,10 +105,16 @@ section:hover {
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
+        margin-top: 20px; /* Adjust margin-top for smaller screens */
     }
 
     header p {
         font-size: 1em;
+    }
+
+    .logo {
+        max-width: 80px; /* Adjust size of the logo on smaller screens */
+        top: 10px; /* Adjust position for smaller screens */
     }
 
     section h2 {
