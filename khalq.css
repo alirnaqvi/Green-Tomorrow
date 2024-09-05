@@ -22,12 +22,12 @@ body {
     border-radius: 10px;
 }
 
-/* Logo positioning at the top right */
+/* Logo fixed to the bottom right */
 .logo {
-    position: absolute;
-    top: 20px; /* Adjust top to ensure space for the title */
-    right: 20px; /* Move logo to the right */
-    max-width: 70px; /* Decrease logo size */
+    position: fixed;
+    bottom: 20px; /* Distance from the bottom of the screen */
+    right: 20px; /* Distance from the right edge of the screen */
+    max-width: 70px; /* Adjust size as needed */
     height: auto;
     z-index: 10; /* Ensure logo stays above other elements */
 }
@@ -35,16 +35,15 @@ body {
 /* Header Styles */
 header {
     text-align: center;
-    padding: 40px 20px 20px; /* Adjust padding to ensure space for logo and title */
+    padding: 40px 20px 20px; /* Adjust padding to ensure space for title */
     position: relative;
-    padding-top: 100px; /* Add top padding to make space for the logo */
 }
 
 header h1 {
     color: #106861; /* Darker color for "Khalq Organization" */
     font-size: 2em; /* Decrease font size of title */
     font-weight: 600;
-    margin-top: 20px; /* Add margin-top to create space from the logo */
+    margin-top: 0; /* Remove margin-top to adjust based on padding */
 }
 
 header h1 span {
@@ -120,11 +119,6 @@ section:hover {
 
     .logo {
         max-width: 50px; /* Further decrease logo size on smaller screens */
-        top: 20px; /* Adjust position for smaller screens */
-    }
-
-    header {
-        padding-top: 80px; /* Adjust top padding for smaller screens */
     }
 
     section h2 {
