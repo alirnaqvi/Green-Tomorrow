@@ -1,0 +1,119 @@
+/* Font and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Logo positioning at the top corner */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px; /* Change this to 'right: 20px;' if you want it on the right */
+    max-width: 100px;
+    height: auto;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 40px 20px 20px;
+    position: relative;
+}
+
+header h1 {
+    color: #106861;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+header p {
+    color: #555;
+    font-size: 1.2em;
+}
+
+/* Section Styles */
+section {
+    margin: 30px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #edf7f3;
+}
+
+section h2 {
+    color: #96c2a9;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+strong {
+    color: #96c2a9;
+}
+
+/* Hover Animation */
+section:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Contact Styles */
+.contribute p {
+    color: #555;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    section p, ul li {
+        font-size: 1em;
+    }
+}
