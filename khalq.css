@@ -25,9 +25,9 @@ body {
 /* Logo positioning at the top corner */
 .logo {
     position: absolute;
-    top: 20px;
-    left: 20px; /* Change this to 'right: 20px;' if you want it on the right */
-    max-width: 100px;
+    top: 10px; /* Adjust top to make more space if needed */
+    left: 20px; /* Adjust position as needed */
+    max-width: 80px; /* Ensure the logo size is appropriate */
     height: auto;
     z-index: 10; /* Ensure logo stays above other elements */
 }
@@ -35,7 +35,7 @@ body {
 /* Header Styles */
 header {
     text-align: center;
-    padding: 40px 20px 20px;
+    padding: 60px 20px 20px; /* Increase top padding to ensure space for logo */
     position: relative;
 }
 
@@ -43,7 +43,7 @@ header h1 {
     color: #106861;
     font-size: 2.5em;
     font-weight: 600;
-    margin-top: 60px; /* Add margin-top to prevent overlap with the logo */
+    margin-top: 0; /* Remove margin-top to adjust based on padding */
 }
 
 header p {
@@ -105,7 +105,7 @@ section:hover {
 @media (max-width: 768px) {
     header h1 {
         font-size: 2em;
-        margin-top: 20px; /* Adjust margin-top for smaller screens */
+        margin-top: 40px; /* Adjust margin-top for smaller screens */
     }
 
     header p {
@@ -113,7 +113,7 @@ section:hover {
     }
 
     .logo {
-        max-width: 80px; /* Adjust size of the logo on smaller screens */
+        max-width: 70px; /* Adjust size of the logo on smaller screens */
         top: 10px; /* Adjust position for smaller screens */
     }
 
