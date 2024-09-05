@@ -22,6 +22,20 @@ body {
     border-radius: 10px;
 }
 
+/* Banner Image Styles */
+.banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    background-image: url('khalq linkedin banner.png'); /* Image file name */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3; /* Adjust transparency */
+    z-index: -1; /* Ensure it stays behind other content */
+}
+
 /* Logo fixed to the bottom right */
 .logo {
     position: fixed;
@@ -35,7 +49,7 @@ body {
 /* Header Styles */
 header {
     text-align: center;
-    padding: 40px 20px 20px; /* Adjust padding to ensure space for title */
+    padding: 60px 20px 20px; /* Adjust padding to ensure space for title and banner */
     position: relative;
 }
 
